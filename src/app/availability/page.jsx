@@ -11,7 +11,7 @@ export default function AvailabilityPage() {
 
   const fetchAvailability = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/availability");
+      const res = await fetch("http://https://d-entertainment-backend.onrender.com/api/availability");
       const data = await res.json();
       setBlockedDates(data);
       setLastUpdated(new Date());

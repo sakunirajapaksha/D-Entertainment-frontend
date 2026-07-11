@@ -33,7 +33,7 @@ export default function AvailabilityPage() {
   const fetchBlockedDates = async () => {
     try {
       setFetching(true);
-      const res = await fetch("http://localhost:5000/api/availability");
+      const res = await fetch("http://https://d-entertainment-backend.onrender.com/api/availability");
       if (!res.ok) throw new Error("Failed to fetch blocked dates");
       const data = await res.json();
       setBlockedDates(data);
@@ -61,7 +61,7 @@ export default function AvailabilityPage() {
 
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
-      const res = await fetch("http://localhost:5000/api/availability", {
+      const res = await fetch("http://https://d-entertainment-backend.onrender.com/api/availability", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

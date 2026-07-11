@@ -41,7 +41,7 @@ export default function SuccessPage() {
 
         // CONFIRM PAYMENT
         const confirmRes = await fetch(
-          `http://localhost:5000/api/payments/confirm/${bookingId}`,
+          `http://https://d-entertainment-backend.onrender.com/api/payments/confirm/${bookingId}`,
           {
             method: "PUT",
             headers: {
@@ -56,7 +56,7 @@ export default function SuccessPage() {
 
         // FETCH BOOKING
         const bookingRes = await fetch(
-          `http://localhost:5000/api/bookings/${bookingId}`,
+          `http://https://d-entertainment-backend.onrender.com/api/bookings/${bookingId}`,
           {
             headers: {
               Authorization: `Bearer ${userInfo.token}`,

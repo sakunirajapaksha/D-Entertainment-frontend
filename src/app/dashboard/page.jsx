@@ -24,7 +24,7 @@ export default function DashboardPage() {
         const userInfo = JSON.parse(storedUser);
 
         const res = await fetch(
-          "http://localhost:5000/api/bookings/my",
+          "http://https://d-entertainment-backend.onrender.com/api/bookings/my",
           {
             headers: {
               Authorization: `Bearer ${userInfo.token}`,

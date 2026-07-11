@@ -26,7 +26,7 @@ export default function AdminGalleryPage() {
       setLoading(true);
 
       const res = await fetch(
-        "http://localhost:5000/api/gallery"
+        "http://https://d-entertainment-backend.onrender.com/api/gallery"
       );
 
       if (!res.ok) throw new Error("Failed to fetch");
@@ -82,7 +82,7 @@ export default function AdminGalleryPage() {
 
     try {
       const res = await fetch(
-        "http://localhost:5000/api/gallery",
+        "http://https://d-entertainment-backend.onrender.com/api/gallery",
         {
           method: "POST",
           headers: {
@@ -124,7 +124,7 @@ export default function AdminGalleryPage() {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/gallery/${id}`,
+        `http://https://d-entertainment-backend.onrender.com/api/gallery/${id}`,
         {
           method: "DELETE",
           headers: {

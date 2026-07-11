@@ -23,7 +23,7 @@ export default function GalleryPage() {
 
     try {
       const res = await fetch(
-        "http://localhost:5000/api/gallery",
+        "http://https://d-entertainment-backend.onrender.com/api/gallery",
         { signal }
       );
 
