@@ -23,7 +23,7 @@ export default function MyBookingsPage() {
         const userInfo = JSON.parse(userInfoRaw);
 
         const response = await fetch(
-          "http://https://d-entertainment-backend.onrender.com/api/bookings/mybookings",
+          "https://d-entertainment-backend.onrender.com/api/bookings/mybookings",
           {
             headers: {
               Authorization: `Bearer ${userInfo.token}`,
@@ -51,7 +51,7 @@ export default function MyBookingsPage() {
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       const response = await fetch(
-        `http://https://d-entertainment-backend.onrender.com/api/invoices/${bookingId}`,
+        `https://d-entertainment-backend.onrender.com/api/invoices/${bookingId}`,
         {
           headers: {
             Authorization: `Bearer ${userInfo.token}`,

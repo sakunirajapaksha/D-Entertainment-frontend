@@ -36,7 +36,7 @@ export default function AdminDashboard() {
         }
 
         const response = await fetch(
-          "http://https://d-entertainment-backend.onrender.com/api/analytics",
+          "https://d-entertainment-backend.onrender.com/api/analytics",
           {
             headers: {
               Authorization: `Bearer ${userInfo.token}`,

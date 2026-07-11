@@ -15,7 +15,7 @@ export default function AdminBookingsPage() {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       if (!userInfo?.token) return;
 
-      const res = await fetch("http://https://d-entertainment-backend.onrender.com/api/bookings", {
+      const res = await fetch("https://d-entertainment-backend.onrender.com/api/bookings", {
         headers: {
           Authorization: `Bearer ${userInfo.token}`,
         },
@@ -39,7 +39,7 @@ export default function AdminBookingsPage() {
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
 
-      await fetch(`http://https://d-entertainment-backend.onrender.com/api/bookings/${id}`, {
+      await fetch(`https://d-entertainment-backend.onrender.com/api/bookings/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -62,7 +62,7 @@ const downloadPDF = async () => {
     const userInfo = JSON.parse(localStorage.getItem("userInfo"));
 
     const res = await fetch(
-      "http://https://d-entertainment-backend.onrender.com/api/bookings/export/pdf",
+      "https://d-entertainment-backend.onrender.com/api/bookings/export/pdf",
       {
         headers: {
           Authorization: `Bearer ${userInfo.token}`,
@@ -102,7 +102,7 @@ const downloadCSV = async () => {
     const userInfo = JSON.parse(localStorage.getItem("userInfo"));
 
     const res = await fetch(
-      "http://https://d-entertainment-backend.onrender.com/api/bookings/export/csv",
+      "https://d-entertainment-backend.onrender.com/api/bookings/export/csv",
       {
         headers: {
           Authorization: `Bearer ${userInfo.token}`,

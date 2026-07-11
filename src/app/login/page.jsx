@@ -146,7 +146,7 @@ export default function LoginPage() {
     setError("");
 
     try {
-      const response = await fetch("http://https://d-entertainment-backend.onrender.com/api/auth/login", {
+      const response = await fetch("https://d-entertainment-backend.onrender.com/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

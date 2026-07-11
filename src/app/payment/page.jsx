@@ -54,7 +54,7 @@ export default function PaymentPage() {
       const userInfo = JSON.parse(userInfoRaw);
 
       const response = await fetch(
-        "http://https://d-entertainment-backend.onrender.com/api/payments/create-checkout-session",
+        "https://d-entertainment-backend.onrender.com/api/payments/create-checkout-session",
         {
           method: "POST",
           headers: {

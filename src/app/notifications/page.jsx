@@ -22,7 +22,7 @@ export default function NotificationPage() {
         const userInfo = JSON.parse(userInfoRaw);
 
         const res = await fetch(
-          "http://https://d-entertainment-backend.onrender.com/api/notifications",
+          "https://d-entertainment-backend.onrender.com/api/notifications",
           {
             headers: {
               Authorization: `Bearer ${userInfo.token}`,
@@ -50,7 +50,7 @@ export default function NotificationPage() {
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       await fetch(
-        `http://https://d-entertainment-backend.onrender.com/api/notifications/${id}/read`,
+        `https://d-entertainment-backend.onrender.com/api/notifications/${id}/read`,
         {
           method: "PUT",
           headers: {

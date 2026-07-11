@@ -42,7 +42,7 @@ export default function NotificationBell() {
   const fetchNotifications = async (token) => {
     try {
       const res = await fetch(
-        "http://https://d-entertainment-backend.onrender.com/api/notifications",
+        "https://d-entertainment-backend.onrender.com/api/notifications",
         {
           headers: {
             Authorization: `Bearer ${token}`,

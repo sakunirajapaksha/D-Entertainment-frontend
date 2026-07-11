@@ -79,7 +79,7 @@ export default function BookingPage() {
     setIsAvailable(false);
     try {
       const res = await fetch(
-        `http://https://d-entertainment-backend.onrender.com/api/availability/check?eventDate=${selectedDate}`
+        `https://d-entertainment-backend.onrender.com/api/availability/check?eventDate=${selectedDate}`
       );
       const data = await res.json();
       if (data.available === false) {
@@ -129,7 +129,7 @@ export default function BookingPage() {
         rate,
         totalPrice,
       };
-      const res = await fetch("http://https://d-entertainment-backend.onrender.com/api/bookings", {
+      const res = await fetch("https://d-entertainment-backend.onrender.com/api/bookings", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

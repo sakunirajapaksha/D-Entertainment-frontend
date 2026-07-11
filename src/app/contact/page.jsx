@@ -70,7 +70,7 @@ export default function ContactPage() {
 
     try {
       // 👉 CONNECT TO BACKEND (optional)
-      // await fetch("http://https://d-entertainment-backend.onrender.com/api/contact", {
+      // await fetch("https://d-entertainment-backend.onrender.com/api/contact", {
       //   method: "POST",
       //   headers: { "Content-Type": "application/json" },
       //   body: JSON.stringify(form),
